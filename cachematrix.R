@@ -38,3 +38,8 @@ cacheSolve <- function(x, ...) {
         x$setinv(inv)
         inv                             ##returns inverse of x matrix
 }
+
+f<-makeCacheMatrix(matrix(1:8,2,4))
+f$get()
+f$getinv()
+cacheSolve(f)
